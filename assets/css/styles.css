@@ -307,10 +307,6 @@ input {
   
 }
 
-.to-buy-now {
-    
-}
-
 .btn:hover {
   background-color: transparent;
   color: var(--first-color);
