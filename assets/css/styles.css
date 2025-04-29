@@ -381,6 +381,16 @@ input {
 }
 
 /*=============== PRODUCTS ===============*/
+.tab__btns {
+  display: flex;
+  column-gap: .75rem;  
+}
+
+.tab__btn {
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
 
 /* Active Tab */
 
