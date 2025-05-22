@@ -288,6 +288,10 @@ input {
   align-items: center;
 }
 
+.home__container img {
+  width: 200%;
+}
+
 .home__subtitle,
 .home__description {
   font-size: var(--large-font-size);
