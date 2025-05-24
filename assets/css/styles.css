@@ -611,6 +611,24 @@ input {
 
 
 /*=============== DEALS ===============*/
+.deals__container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.deals__item:nth-child(1) {
+  background-image: url(../img/deals-1.jpg);
+}
+
+.deals__item:nth-child(2) {
+  background-image: url(../img/deals-2.png);
+}
+
+.deals__item {
+  padding: 3rem;
+}
+
+
+
 
 /*=============== NEW ARRIVALS ===============*/
 
