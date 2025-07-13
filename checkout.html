@@ -66,7 +66,7 @@
             </li>
 
             <li class="nav__item">
-              <a href="login-register.html" class="nav__link active-link">Entrar</a>
+              <a href="login-register.html" class="nav__link">Entrar</a>
             </li>
           </ul>
 
@@ -91,7 +91,7 @@
 
           <a href="cart.html" class="header__action-btn">
             <img src="assets/img/icon-cart.svg" alt="icone favorito">
-            <span class="count">0</span>
+            <span class="count">3</span>
           </a>
         </div>
       </nav>
@@ -100,13 +100,139 @@
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
+     <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Início</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link active-link">Produtos</span></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link active-link">Pagamento</span></li>
+        </ul>
+      </section>
 
       <!--=============== CHECKOUT ===============-->
-      <section class="checkout"></section>
+      <section class="checkout section--lg">
+        <div class="checkout__container container grid">
+          <div class="checkout__group">
+            <h3 class="section__title">Detalhes de cobrança</h3>
+
+            <form action="" class="form grid">
+              <input type="text" placeholder="Nome" class="form__input">
+
+              <input type="text" placeholder="Endereço" class="form__input">
+
+              <input type="text" placeholder="Cidade" class="form__input">
+
+              <input type="text" placeholder="País" class="form__input">
+
+              <input type="text" placeholder="Cep" class="form__input">
+
+              <input type="text" placeholder="Telefone" class="form__input">
+
+              <input type="email" placeholder="Email" class="form__input">
+
+              <h3 class="checkout__title">Informações adicionais</h3>
+
+              <textarea name="" placeholder="Observação do pedido" id="" cols="30"
+              rows="10" class="form__input textarea"></textarea>
+            </form>
+          </div>
+
+          <div class="checkout__group">
+            <h3 class="section__title">Total do carrinho</h3>
+
+            <table class="order__table">
+              <tr>
+                <th colspan="2">Produtos</th>
+                <th>Total</th>
+              </tr>
+
+              <tr>
+                <td>
+                  <img 
+                    src="assets/img/product-1-2.jpg" 
+                    alt="" class="order__img">
+                </td>
+
+                <td>
+                  <h3 class="table__title">Camisa Mushroom wear</h3>
+                  <p class="table__quantity">x 1</p>
+                </td>
+
+                <td><span class="table__price">R$147,90</span></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img 
+                    src="assets/img/product-2-1.jpg" 
+                    alt="" class="order__img">
+                </td>
+
+                <td>
+                  <h3 class="table__title">Camisa Xploud Colors</h3>
+                  <p class="table__quantity">x 1</p>
+                </td>
+
+                <td><span class="table__price">R$147,90</span></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img 
+                    src="assets/img/product-7-1.jpg" 
+                    alt="" class="order__img">
+                </td>
+
+                <td>
+                  <h3 class="table__title">Camisa Revenge</h3>
+                  <p class="table__quantity">x 1</p>
+                </td>
+
+                <td><span class="table__price">R$184,90</span></td>
+              </tr>
+
+              <tr>
+                <td><span class="order__subtitle">Subtotal</span></td>
+                <td colspan="2"><span class="table__price">R$ 480,70</span></td>
+              </tr>
+
+              <tr>
+                <td><span class="order__subtitle">Frete</span></td>
+                <td colspan="2"><span class="table__price">R$ 35,00</span></td>
+              </tr>
+
+              <tr>
+                <td><span class="order__subtitle">Total</span></td>
+                <td colspan="2"><span class="order__grand-total">R$ 515,70</span></td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </section>
 
       <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter"></section>
+      <section class="newsletter section">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img src="assets/img/icon-email.svg" alt="" 
+            class="newsletter__icon"
+            />
+            inscrever-se na newsletter
+          </h3>
+
+          <p class="newsletter__description">
+            ... e receba um cupom de 25% de desconto
+          </p>
+          <form action="" class="newsletter__form">
+            <input type="text" placeholder="Insira seu e-mail" 
+            class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">inscrever</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!--=============== FOOTER ===============-->
@@ -212,9 +338,9 @@
     </footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
