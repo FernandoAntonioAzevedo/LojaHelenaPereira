@@ -92,3 +92,7 @@ const tabs = document.querySelectorAll('[data-target]'),
       tab.classList.add('active-tab');
     });
   });
+
+
+  /*========= LOGIN - REGISTER =======*/
+
