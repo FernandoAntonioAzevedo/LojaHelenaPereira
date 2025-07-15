@@ -1,10 +1,23 @@
 /*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close');
 
 /*===== Menu Show =====*/
 /* Validate if constant exists */
+if(navToggle) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.add('show-menu');
+  });
+}
 
 /*===== Hide Show =====*/
 /* Validate if constant exists */
+if(navClose) {
+  navClose.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+  });
+}
 
 /*=============== IMAGE GALLERY ===============*/
 function imgGallery() {
@@ -62,7 +75,7 @@ var swiperProducts = new Swiper('.new__container', {
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 40,
         },
         1024: {
