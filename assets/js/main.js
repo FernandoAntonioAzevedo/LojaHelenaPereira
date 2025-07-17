@@ -44,12 +44,12 @@ var swiperCategories = new Swiper('.categories__container', {
     },
 
     breakpoints: {
-        640: {
+        631: {
           slidesPerView: 2,
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 40,
         },
         1024: {
